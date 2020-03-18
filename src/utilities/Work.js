@@ -10,9 +10,9 @@ function work(){
   return(
 
     <div className="work">
-    <center><h1>Worksss</h1>
+    <h1>My Projects</h1>
     <div className="gap"></div>
-   </center>
+   
    <Projects/>
 
    <div className="gap"></div>

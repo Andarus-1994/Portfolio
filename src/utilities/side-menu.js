@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import {NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHome, faBriefcase, faInfo} from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight,faHome, faBriefcase, faInfo} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -18,6 +18,7 @@ function SideMenu(){
 
     <div className="side-menu">
         <ul>
+        <li><FontAwesomeIcon icon={faArrowRight} size="2x" className="arrow"  /></li>
         <NavLink to="/" exact activeClassName="active" className="inactive"  >
             <li>  <FontAwesomeIcon icon={faHome} size="2x"  /> <span className="home">Home</span> 
 </li>

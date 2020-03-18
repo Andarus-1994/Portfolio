@@ -21,7 +21,8 @@
   padding: 0;
   width:60px;
   font-family: 'Roboto Slab';
-  transition:width 0.4s ease;
+  transition:width 0.6s ease;
+  
 
   
   
@@ -29,7 +30,8 @@
 
 
 .side-menu:hover{
-  width:140px;
+  width:150px;
+ 
 }
 
 
@@ -63,6 +65,9 @@
   white-space: nowrap;
   overflow: hidden;
   padding:15px 10px;
+  border-bottom:1px solid rgb(64, 127, 151);
+  border-top:1px solid rgb(64, 127, 151);
+  
 }
 .side-menu li:hover{
   background:rgb(17, 50, 77);
@@ -86,6 +91,16 @@
   margin-left: 22px;
 }
 
+.side-menu .arrow{
+  color:rgb(24, 14, 14);
+  transition-duration: 0.4s;
+}
+
+.side-menu:hover .arrow{
+  color:rgb(226, 226, 226);
+  transform: rotate(180deg);
+  transition-duration: 0.4s;
+}
 
 
 
@@ -120,7 +135,7 @@ box-shadow: 0 7px 5px rgb(2, 1, 8);
   text-decoration: none;
   padding:14px;
   font-family: 'Noto Sans KR' ;
- 
+  transition-duration: 0.4s;
 }
 
 .nav-links .inactive{
@@ -132,6 +147,7 @@ box-shadow: 0 7px 5px rgb(2, 1, 8);
 .nav-links .inactive:hover{
   color:rgb(0, 0, 0);
   background-color: rgb(121, 196, 226);
+  transition-duration: 0.4s;
 }
 
 
@@ -291,6 +307,7 @@ i {
   width:90%;
   padding-top:10px;
   align-items: center;
+  
  
 }
 
@@ -461,6 +478,14 @@ i {
 }
 
 
+.work h1{
+  font-size: 5.6rem;
+  color:rgb(34, 70, 100);
+  font-family: 'Roboto Slab';
+  text-align: center;
+  margin-top:40px;
+}
+
 .containerProjects{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -468,13 +493,14 @@ i {
   grid-row-gap:30px;
   width:60%;
   margin:0 auto;
-
+ 
 }
 
 .Project{
   background-color:rgb(74, 138, 175);
   padding:25px;
   text-align: center;
+ 
 }
 
 .Project img{
@@ -486,19 +512,27 @@ i {
 }
 
 .Project button{
+  position: relative;
   cursor: pointer;
   color:rgb(255, 255, 255);
   background:rgb(29, 119, 179);
   font-size:1rem;
   font-family: 'Noto Sans KR' ;
   border:none;
+  border-bottom: 1px solid rgb(23, 65, 119);
+  border-right:  2px solid rgb(23, 65, 119);
   margin:20px;
   padding:10px 15px;
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
 }
 
 .Project button:hover{
-  background:rgb(23, 106, 161);
+  background:rgb(20, 98, 150);
+}
+
+.Project button:active{
+  top:2px;
+  background:rgb(11, 62, 95);
 }
 
 
@@ -643,7 +677,7 @@ i {
     
     display: inline;
     margin:0px 10px;
-
+    border:none;
    
   }
 
@@ -670,6 +704,13 @@ color:white;
     color:rgb(73, 183, 190);
     background:rgb(21, 61, 94);
   }
+
+  .side-menu .arrow{
+   display: none;
+  }
+  
+
+  
   
 
 
@@ -720,8 +761,8 @@ color:white;
     flex-direction: column;
    margin-top:100%;
    margin-left:0;
-    height:900px;
-    width:650px;
+   
+    width:600px;
    
 
   }
@@ -734,7 +775,7 @@ color:white;
   .test{
 
     width:320px;
-    height:300px;
+    height:340px;
     
   }
 
@@ -747,8 +788,17 @@ color:white;
   .test p{
     margin-top:15%;
   }
+
+  .containerProjects{
+   margin-left: 5px;
+   transition-duration: 0.4s;
+  }
+
+  .Project{
+    width:98%;
+  }
   .footer{
-    margin-top:600px;
+    margin-top:750px;
    
   }
 
