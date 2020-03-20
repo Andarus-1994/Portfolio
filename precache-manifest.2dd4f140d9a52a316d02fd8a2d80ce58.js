@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b372a89a6afa5bb518b11cf1e6416cb2",
+    "revision": "bb6ca089b08a4317bb10ffb3a77318d0",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "345170a34ecc00c09dd4",
+    "revision": "d2ef1f970216a9a16ef0",
     "url": "/Portfolio/static/css/2.caed52fd.chunk.css"
   },
   {
-    "revision": "64375c07c0a349b4bca1",
-    "url": "/Portfolio/static/css/main.8b5c5230.chunk.css"
+    "revision": "f9319b00db2da525e598",
+    "url": "/Portfolio/static/css/main.6a82dd9d.chunk.css"
   },
   {
-    "revision": "345170a34ecc00c09dd4",
-    "url": "/Portfolio/static/js/2.1cecc3b4.chunk.js"
+    "revision": "d2ef1f970216a9a16ef0",
+    "url": "/Portfolio/static/js/2.a8aadf0a.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/Portfolio/static/js/2.1cecc3b4.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.a8aadf0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64375c07c0a349b4bca1",
-    "url": "/Portfolio/static/js/main.72656dc8.chunk.js"
+    "revision": "f9319b00db2da525e598",
+    "url": "/Portfolio/static/js/main.93b22459.chunk.js"
   },
   {
     "revision": "f05f7305b86207cd2b64",
@@ -44,8 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/img_Carousel2.2fe8515e.png"
   },
   {
+    "revision": "1590470b68a4301caec3bef0b6865b62",
+    "url": "/Portfolio/static/media/laptop.1590470b.jpg"
+  },
+  {
+    "revision": "1f6d9b8b9f84f7af82d032d25de7ce06",
+    "url": "/Portfolio/static/media/natureProject.1f6d9b8b.jpg"
+  },
+  {
     "revision": "e47c5a968bf1b2af8f1ecd7b46c1bac9",
     "url": "/Portfolio/static/media/natureProject.e47c5a96.png"
+  },
+  {
+    "revision": "fe02a396302e654576fad2b1a08c3694",
+    "url": "/Portfolio/static/media/project1.fe02a396.jpg"
   },
   {
     "revision": "a589e8f72c0df6e626204a584e16286e",
@@ -54,5 +66,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "62c618d11357e0c1335e48970f9df88f",
     "url": "/Portfolio/static/media/project3.62c618d1.png"
+  },
+  {
+    "revision": "72764b78ede2aa601633af8d687cef5c",
+    "url": "/Portfolio/static/media/project3.72764b78.jpg"
   }
 ]);
