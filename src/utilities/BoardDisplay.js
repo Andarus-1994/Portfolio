@@ -13,14 +13,14 @@ class BoardDisplay extends Component {
     constructor() {
 		super();
 		this.state = {
-			show: true,
+			show: false,
         };
     }
     
    handleClick =() => {
     
         this.setState({show:!this.state.show});
-        console.log(this.state.show);
+        console.log("Fill the Tables: "+this.state.show);
         
       }
  

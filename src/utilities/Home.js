@@ -41,14 +41,16 @@ function Home(){
                 {id:2 , title:"Passion",  message: 'Because I am doing this out of passion and it feels like I am not even working.', background:'rgb(19, 102, 156)'}]
 
                
-  
+  if(isLoaded)
+  {
+    return <Loader /> ;
+  }
 
              
   return(
 
     <div className="Home">
-    
-    {isLoaded && <Loader />}
+   
    
     <div className="homeCover">
     <center><h1 className="titleHome"><span className="homie">Welcome</span>, to my Portfolio Website</h1></center>

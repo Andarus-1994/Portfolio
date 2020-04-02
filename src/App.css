@@ -713,10 +713,9 @@ font-weight: 900;}
   justify-content: space-between;
   width:100%;
   max-width: 968px;
-  
   margin: 0 auto;
   margin-top:200px;
-  padding: 15px;
+  padding: 0px;
 }
 .flexbox .board{
   position: relative;
@@ -1201,7 +1200,7 @@ color:white;
    margin-top:100%;
    margin-left:0;
    
-    width:500px;
+    width:450px;
    
 
   }
@@ -1213,7 +1212,7 @@ color:white;
   }
 
   .test{
-    top:10%;
+    top:15%;
     width:320px;
     height:360px;
     clip-path: polygon(50.80% 6.53%, 100% 0px, 92.04% 90.76%, 50% 100%, 22px 90.67%, 0px 0px);
@@ -1294,6 +1293,11 @@ color:white;
 
   .flexbox .board{
     margin:30px 0;
+    
+  }
+
+  .About button{
+    margin-left: 20%;
     
   }
   .footer{

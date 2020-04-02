@@ -12,12 +12,12 @@ function FHome({title,message,left,background}){
    const [isShown, setIsShown] = useState(false);
    const mystyle = {
   position: "absolute",
-  top:"-2%",
-  left:"-1%",
+  top:"5%",
+  left:"80%",
   height:"50px",
   width:"50px",
-  color:"rgb(26, 100, 153)",
-  backgroundColor: "rgb(14, 57, 88)",
+  color:"rgb(14, 57, 88)",
+ 
   borderRadius: "50%",
   padding: "7px",
   zIndex: "5",
@@ -26,6 +26,7 @@ function FHome({title,message,left,background}){
    
     const divStyle1 = {
       backgroundColor:background,
+     
       
     };
     
