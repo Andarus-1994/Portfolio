@@ -19,7 +19,7 @@ function SideMenu(){
     <div className="side-menu">
         <ul>
         <li><FontAwesomeIcon icon={faArrowRight} size="2x" className="arrow"  /></li>
-        <NavLink to="/" exact activeClassName="active" className="inactive"  >
+        <NavLink to="/Portfolio" exact activeClassName="active" className="inactive"  >
             <li>  <FontAwesomeIcon icon={faHome} size="2x"  /> <span className="home">Home</span> 
 </li>
             </NavLink>

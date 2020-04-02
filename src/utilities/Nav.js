@@ -1,23 +1,24 @@
 import React from 'react';
 import '../App.css';
 import {NavLink} from 'react-router-dom';
-import Logo from '../utilities/logo.png';
+import Logo from '../utilities/logo2.png';
+
 
 
 
 function Nav(){
 
 
- 
+
 
 
 
   return(
-
+<div>
     <nav>
   <img src={Logo} alt=""></img> 
    <ul className="nav-links">
-   <NavLink to="/" exact activeClassName="active" className="inactive"  >
+   <NavLink to="/Portfolio"  exact activeClassName="active" className="inactive"  >
    <li>   Home </li>
        </NavLink> 
        <NavLink to="/about" activeClassName="active" className="inactive"  >
@@ -30,7 +31,9 @@ function Nav(){
    
     </nav>
 
-    
+      
+
+        </div>
   
   );
 }

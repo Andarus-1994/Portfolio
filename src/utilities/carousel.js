@@ -5,7 +5,7 @@ import Project3 from '../utilities/project3.png';
 import Project2 from '../utilities/project2.jpg';
 import Dog from '../utilities/dog.png';
 import Img1 from '../utilities/img_Carousel1.png';
-import Img2 from '../utilities/img_Carousel2.png';
+import Img2 from '../utilities/img_carusel5.png';
 import Nature from '../utilities/natureProject.png';
 import '../App.css';
 

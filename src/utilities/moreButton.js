@@ -43,20 +43,23 @@ class MoreButton extends React.Component {
 
 		return (
 			<div>
-		
+			
 				<div >
 					{title}
 				</div>
 			
 				{opened && (
-                    
-					
-					<div class="containerHome2">
-						{children}
-					</div>
 		
 					
+					
+					<div className="containerHome2">
+			
+						{children}
+						
+					</div>
+				
 				)}
+				
 			</div>
 		);
 	}

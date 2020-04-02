@@ -5,7 +5,12 @@ import About from './utilities/About';
 import Nav from './utilities/Nav';
 import './App.css';
 import SideMenu from './utilities/side-menu';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+
+
+
+const NoMatch = () => <h1 className="noMatch">404 Not Found</h1>
 
 
 
@@ -13,24 +18,37 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App(){
 
 
-
-  
-
+ 
+ 
   return(
-   <Router>
+    
+   <Router >
+
     <div className="app">
+    
+
+
     <Nav />
     <SideMenu />
-    <Switch>
+    
+         
+   <Switch>
     
     <Route path="/about" component={About}/>
     <Route path="/work" component={Work}/>
-    <Route path="/" exact component={Home}/>
+    <Route path="/Portfolio"  exact component={Home}/>
+    <Route component={NoMatch} />
+   
+  
     </Switch>
+   
+    
    
     </div>
     </Router>
   );
 }
+
+
 
 export default App;
