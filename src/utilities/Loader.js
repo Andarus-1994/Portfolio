@@ -13,7 +13,7 @@ const MyLoader = () => (
    
     interval={0.5}
     viewBox="0 0 400 160"
-    backgroundColor="rgb(68, 162, 224)"
+    backgroundColor="rgb(74, 138, 175)"
     foregroundColor="rgb(46, 118, 167)"
   >
  

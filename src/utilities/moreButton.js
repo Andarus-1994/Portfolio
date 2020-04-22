@@ -7,8 +7,9 @@ import '../App.css';
 
 
 
-
 class MoreButton extends React.Component {
+
+
 
 	constructor(props) {
 		super(props);
@@ -31,15 +32,15 @@ class MoreButton extends React.Component {
 		var { title, children } = this.props;
 		const { opened } = this.state;
 
-		if (!opened){
-			
+
+			if(!opened){
             title =<button className="moreButton"  onClick={this.toggleBox} 
 			> <span></span>
 			<span></span>
 			<span></span>
 			<span></span>Click here to find out!</button>;
-			
-		}
+			}
+
 
 		return (
 			<div>
@@ -50,14 +51,15 @@ class MoreButton extends React.Component {
 			
 				{opened && (
 		
-					
-					
+	
+				
 					<div className="containerHome2">
 			
 						{children}
 						
 					</div>
 				
+			
 				)}
 				
 			</div>

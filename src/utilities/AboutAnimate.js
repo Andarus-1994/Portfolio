@@ -62,7 +62,7 @@ function animateAbout(){
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-      // INJECT CSS
+      // Aici adaug linia...doar daca avem content de afisat.
       var css = document.createElement("style");
       css.type = "text/css";
      
@@ -78,7 +78,7 @@ return(
   <div className="AboutAnimate">
     {StartTyping()}
 <h1>
-  <div  className="typewrite" data-period="2000" data-type='[  "I Love Design.", "I am Creative.", "I Love to Develop.", "I love WEB!" ]'>
+  <div  className="typewrite" data-period="2000" data-type={`${Quotes}`}>
     <span className="wrap"></span>
   </div>
 </h1>
@@ -88,3 +88,5 @@ return(
 }
 
 export default animateAbout;
+
+let Quotes='[  "I Love Design.", "I am Creative.", "I Love to Develop.", "I love WEB!" ]';

@@ -5,10 +5,15 @@ import Carousel from './carousel';
 import MoreButton from './moreButton';
 import Footer from './Footer';
 import Loader from './Loader';
-
-
+import DarkMode from './DarkMode';
+import Fade from 'react-reveal/Fade';
 
 function Home(){
+  
+
+    
+
+
   const [isLoaded, setIsLoaded] = useState(true);
   useEffect(() => {
     function handleLoading(load){
@@ -38,7 +43,8 @@ function Home(){
 
   const text = [{ id:0 , title:"Creativity",  message: 'I’d get to create beautiful things for the internet, and use up all my creative juices on typography pairings, color schemes, and giving websites that certain mark of myself.', background:'rgb(17, 92, 141)'},
                 {id:1 , title:"Community",  message: 'The fact that there is a big community sharing ideas, new technologies, new thoughts and diffrents points of view. ', background:'rgb(27, 90, 133)'},
-                {id:2 , title:"Passion",  message: 'Because I am doing this out of passion and it feels like I am not even working.', background:'rgb(19, 102, 156)'}]
+                {id:2 , title:"Passion",  message: 'Because I am doing this out of passion and it feels like I am not even working.', background:'rgb(19, 102, 156)'},
+              ]
 
                
   if(isLoaded)
@@ -46,33 +52,35 @@ function Home(){
     return <Loader /> ;
   }
 
+  
              
   return(
-
+   
     <div className="Home">
-   
-   
+    <DarkMode />
+    <Fade>
     <div className="homeCover">
     <center><h1 className="titleHome"><span className="homie">Welcome</span>, to my Portfolio Website</h1></center>
     <br />
- 
     <div className="containerCarousel">
     <Carousel />
     </div>
     </div>
+    </Fade>
     <div className="containerHome">
     
     <div className="whatTitle">Why do I like <span>WEB Development?</span></div>
     
    <MoreButton >
-
+  
    {text.map(box =>(
      <div key={box.id}>
+  
     <FHome  title={box.title} message={box.message} left={box.left} background={box.background}  />
-    
+   
     </div>
    ))}
-   
+ 
 </MoreButton>
   </div>
   <Footer/>

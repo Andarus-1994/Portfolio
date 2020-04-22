@@ -4,12 +4,13 @@ import Footer from './Footer';
 import InfoAbout from './InfoAbout';
 import AboutAnimate from './AboutAnimate';
 import BoardDisplay from './BoardDisplay';
-
-
-
+import DarkMode from './DarkMode';
+import Users from './UserContainer';
+import Fade from 'react-reveal/Fade';
+import Jump from 'react-reveal/Jump';
 
  function About(){
-
+  
   useEffect(() => {
     fetchItems();
 },[]);
@@ -36,43 +37,56 @@ const fetchItems =  async() => {
      
     }; */
     
-    
 
+ 
+ 
   return(
 
+  
+
     <div className="About">
-<h2>About ME</h2>
+     
+    <DarkMode />
+    <Fade>
+<h2>About</h2>
 {textAbout.map(text=>(
   <div key={text.id}>
     <InfoAbout text={text.text} text2={text.text2} />
     </div>
 ))}
-
+</Fade>
 
 
   <AboutAnimate />
-   <div className="gap"></div>
-   
- 
-    
+  
+  
+   <div className="centralize-About">
+   <Jump>
    <BoardDisplay />
-    
+   </Jump>
+   </div>
    
    
    <div className="gap"></div>
 
    {items.map(item =>(
+    
        <img key={item.id}  src={item.url} alt={item.name} className="cat" ></img>
-      
+    
      
    ))}
-
+  
+   
+   <Users />
+  
+   
    <Footer/>
     
  </div>
   
   );
    
+
   
 }
 

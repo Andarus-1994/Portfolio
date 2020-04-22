@@ -3,7 +3,7 @@ import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faStar} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -34,7 +34,7 @@ function FHome({title,message,left,background}){
 
 return(
 
-     
+
     <div className="test"  style={divStyle1}  onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}>
     {isShown && (
@@ -44,16 +44,16 @@ return(
         </div>
       )}
 
-
+      <Fade >
    
     <div className="wrapBox">
     <h1 className="titleBox">{title}</h1>
-   
-    </div>
-    <p>{message} </p>
 
     </div>
-  
+    
+    <p>{message} </p>
+</Fade>
+    </div>
 
 
 );

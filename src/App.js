@@ -6,13 +6,11 @@ import Nav from './utilities/Nav';
 import './App.css';
 import SideMenu from './utilities/side-menu';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ScrollTop from './utilities/scrollTop';
 
 
 
-
-const NoMatch = () => <h1 className="noMatch">404 Not Found</h1>
-
-
+const NoMatch = () => <h1 className="noMatch">404 Not Found Wrong adress!</h1>
 
 
 function App(){
@@ -31,7 +29,7 @@ function App(){
     <Nav />
     <SideMenu />
     
-         
+     <ScrollTop> 
    <Switch>
     
     <Route path="/about" component={About}/>
@@ -41,7 +39,7 @@ function App(){
    
   
     </Switch>
-   
+    </ScrollTop>   
     
    
     </div>

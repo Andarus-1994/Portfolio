@@ -3,7 +3,11 @@ import '../App.css';
 import {NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight,faHome, faBriefcase, faInfo} from '@fortawesome/free-solid-svg-icons';
-
+import {
+    
+  faGithub
+  
+} from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -15,7 +19,7 @@ function SideMenu(){
 
    
     
-
+    <div className="side-bar">
     <div className="side-menu">
         <ul>
         <li><FontAwesomeIcon icon={faArrowRight} size="2x" className="arrow"  /></li>
@@ -35,7 +39,8 @@ function SideMenu(){
 
         </ul>
     </div>
-  
+    <a className="linkSide" href="https://github.com/Andarus-1994/"> <div className="gitHubSpecial"><FontAwesomeIcon icon={faGithub} size="3x"  /> <span> My Github!</span></div></a>
+    </div>
   );
 }
 
