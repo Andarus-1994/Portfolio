@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b307faae9ee747c6e93b1d7b954bec82",
+    "revision": "b732fea826a90b36a8a58f2a37968ac5",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "b432f8f5e45efe350561",
+    "revision": "8af524e7d628cc0bd158",
     "url": "/Portfolio/static/css/2.caed52fd.chunk.css"
   },
   {
-    "revision": "5f077c7b78a6a7969754",
-    "url": "/Portfolio/static/css/main.f3d4fdbc.chunk.css"
+    "revision": "acde7590bbae5fed315d",
+    "url": "/Portfolio/static/css/main.98ba83f1.chunk.css"
   },
   {
-    "revision": "b432f8f5e45efe350561",
-    "url": "/Portfolio/static/js/2.cac16e7a.chunk.js"
+    "revision": "8af524e7d628cc0bd158",
+    "url": "/Portfolio/static/js/2.bff20974.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/Portfolio/static/js/2.cac16e7a.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.bff20974.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f077c7b78a6a7969754",
-    "url": "/Portfolio/static/js/main.f5782666.chunk.js"
+    "revision": "acde7590bbae5fed315d",
+    "url": "/Portfolio/static/js/main.995c386f.chunk.js"
   },
   {
     "revision": "f05f7305b86207cd2b64",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "19b93e849223b20236b318a01444e00a",
     "url": "/Portfolio/static/media/dog.19b93e84.png"
+  },
+  {
+    "revision": "2dc7f2a4845e91b98128b0b85bd38010",
+    "url": "/Portfolio/static/media/halloween-png.2dc7f2a4.png"
   },
   {
     "revision": "5a457da7369f5e530b32482d2f9f4622",
@@ -90,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ab84e02ac0af7e8239c73f0740de2cb",
     "url": "/Portfolio/static/media/searchusers.8ab84e02.jpg"
+  },
+  {
+    "revision": "1e1837e9d85e8477245c09aba5f5ee1a",
+    "url": "/Portfolio/static/media/witch.1e1837e9.png"
   }
 ]);
