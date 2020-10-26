@@ -19,7 +19,7 @@ function SideMenu(){
 
    
     
-    <div className="side-bar">
+  
     <div className="side-menu">
         <ul>
         <li><FontAwesomeIcon icon={faArrowRight} size="2x" className="arrow"  /></li>
@@ -38,9 +38,10 @@ function SideMenu(){
             
 
         </ul>
+        <a className="linkSide" href="https://github.com/Andarus-1994/"> <div className="gitHubSpecial"><FontAwesomeIcon icon={faGithub} size="3x"  /> <span> My Github!</span></div></a>
     </div>
-    <a className="linkSide" href="https://github.com/Andarus-1994/"> <div className="gitHubSpecial"><FontAwesomeIcon icon={faGithub} size="3x"  /> <span> My Github!</span></div></a>
-    </div>
+    
+ 
   );
 }
 

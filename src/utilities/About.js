@@ -5,7 +5,7 @@ import InfoAbout from './InfoAbout';
 import AboutAnimate from './AboutAnimate';
 import BoardDisplay from './BoardDisplay';
 import DarkMode from './DarkMode';
-import Users from './UserContainer';
+/* import Users from './UserContainer'; */
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 
@@ -49,12 +49,16 @@ const fetchItems =  async() => {
     <DarkMode />
     <Fade>
 <h2>About</h2>
+</Fade>
+
 {textAbout.map(text=>(
   <div key={text.id}>
+  
     <InfoAbout text={text.text} text2={text.text2} />
+  
     </div>
 ))}
-</Fade>
+
 
 
   <AboutAnimate />
@@ -76,8 +80,8 @@ const fetchItems =  async() => {
      
    ))}
   
-   
-   <Users />
+{/*    
+   <Users />  */}
   
    
    <Footer/>

@@ -11,7 +11,7 @@ function contentProjects({title,img,url,url1}){
 
 <div className="Project">
 <h2>{title}</h2>
-<img src={require(`./${img.toLowerCase()}.jpg`)} alt="project1"></img>
+<img src={require(`./${img.toLowerCase()}.jpg`)} alt="project"></img>
 
 
 <a href={url} title={title}>Demo</a>

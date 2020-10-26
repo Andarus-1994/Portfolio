@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -52,13 +52,13 @@ class MoreButton extends React.Component {
 				{opened && (
 		
 	
-				
+					<Fade >
 					<div className="containerHome2">
 			
 						{children}
 						
 					</div>
-				
+					</Fade>
 			
 				)}
 				

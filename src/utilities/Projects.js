@@ -4,8 +4,8 @@ import ProjectContent from './ProjectContent';
 
 function projects(){
 
-  const projects = [{ id:0 , title:"Project Test", img:"bms2", url:"https://andarus-1994.github.io/Website1/", url1:"https://github.com/Andarus-1994/Website1"},
-  {id:1 , title:"Project 2", img:"bms2", url:"https://andarus-1994.github.io/Website1/"},
+  const projects = [{ id:0 , title:"Company Website", img:"bms2", url:"https://andarus-1994.github.io/Website1/", url1:"https://github.com/Andarus-1994/Website1"},
+  {id:1 , title:"Search Users", img:"searchUsers", url:"https://andarus-1994.github.io/SearchUsers/", url1:"https://github.com/Andarus-1994/SearchUsers/tree/master"},
   {id:2 , title:"Project 3", img:"Project1", url:"https://andarus-1994.github.io/Website1/"},
   {id:3 , title:"Project 4", img:"project3", url:"https://andarus-1994.github.io/Website1/"}]
  

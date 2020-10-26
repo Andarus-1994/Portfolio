@@ -70,7 +70,9 @@ function BoardDisplay(){
     <Card id={opener ? 'card-9' : 'card-91'} className="card" draggable="true" bounds="parent">
     <p>Laravel</p>  
     </Card>
-
+    <Card id={opener ? 'card-7' : 'card-71'} className="card" draggable="true" bounds="parent">
+          <p>Vue</p>
+   </Card>
     </Board>
 
     <Board id="board-3" className="board" title="Plans to learn" left="-5%">
@@ -81,9 +83,7 @@ function BoardDisplay(){
     <p>ASP.Net</p>    
     </Card>
 
-    <Card id="card-7" className="card" draggable="true">
- 
-   </Card>
+  
 
     </Board>
 

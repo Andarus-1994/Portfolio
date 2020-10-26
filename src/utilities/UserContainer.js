@@ -38,6 +38,7 @@ function UsersContainer ({ userData, fetchUsers }) {
 
   function Validate(){
     setNumber({ value:  X.replace(/^0+/, ''),})
+   
   }
 
   function SplitArray(word){
@@ -66,7 +67,7 @@ function UsersContainer ({ userData, fetchUsers }) {
     
     <label>Search:</label>
     
-    <input className="inputUsers" id="myInput" type="text" defaultValue="All"  onChange={handleChange} onKeyDown={KeyPress}  ></input> 
+    <input className="inputUsers" id="myInput" type="text" defaultValue={number.value}  onChange={handleChange} onKeyDown={KeyPress}  ></input> 
     <button className="searchButton" onClick={Validate}><FontAwesomeIcon icon={faSearch} size="1x"  /><span className="tooltiptext">Search</span></button>
     <div>Example of search: "3-7","All" and also by name .</div>
    <p style={{fontSize:'3rem', fontFamily: 'Spartan, sans-serif', marginTop:'15px'}}>Find people by Name or ID</p>
