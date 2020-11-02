@@ -18,7 +18,7 @@ function SideMenu(){
   return(
 
    
-    
+    <div>    <a className="linkSide" href="https://github.com/Andarus-1994/"> <div className="gitHubSpecial"><FontAwesomeIcon icon={faGithub} size="3x"  /> <span> My Github!</span></div></a>
   
     <div className="side-menu">
         <ul>
@@ -38,9 +38,9 @@ function SideMenu(){
             
 
         </ul>
-        <a className="linkSide" href="https://github.com/Andarus-1994/"> <div className="gitHubSpecial"><FontAwesomeIcon icon={faGithub} size="3x"  /> <span> My Github!</span></div></a>
-    </div>
     
+    </div>
+    </div>
  
   );
 }

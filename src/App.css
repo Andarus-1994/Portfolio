@@ -184,6 +184,7 @@
 }
 
 nav {
+  position: relative;
   display: flex;
   width: 60%;
   justify-content: space-around;
@@ -251,6 +252,152 @@ nav {
 .homie {
   color: rgb(27, 56, 80);
   font-size: 7rem;
+}
+
+.Decorate1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(20, 50, 78);
+  height: 200px;
+  width: 300px;
+  clip-path: polygon(
+    49.09% 0%,
+    100% 0px,
+    70% 36.75%,
+    40% 40.75%,
+    20% 43%,
+    0px 82.5%,
+    0px 0px
+  );
+  z-index: -1;
+}
+
+.decorateON {
+  font-size: 0.8rem;
+  font-family: "Roboto";
+  color: rgb(89, 203, 255);
+  cursor: pointer;
+  background-color: rgb(6, 15, 15);
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  padding: 15px 5px;
+  border: none;
+  border-left: 7px solid rgb(20, 50, 78);
+  border-right: 7px solid rgb(20, 50, 78);
+  border-bottom: 10px solid rgb(11, 12, 19);
+  box-shadow: inset 0px -10px 10px 0px rgb(17, 45, 77);
+  transition-duration: 0.3s;
+}
+
+.decorateON:hover {
+  color: rgb(165, 148, 148);
+  box-shadow: inset 0px -10px 10px 0px rgb(28, 61, 99);
+}
+
+.decorateOFF {
+  cursor: pointer;
+  background-color: rgb(6, 15, 15);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 25px 17px;
+  border: none;
+
+  animation: open 2s infinite;
+}
+
+.decorateOFF::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 15px;
+  height: 5px;
+  width: 7px;
+  background-color: rgb(70, 167, 158);
+  animation: open 2s infinite;
+}
+
+@keyframes open {
+  0% {
+    clip-path: polygon(
+      58.31% 15.56%,
+      100% 0px,
+      80.97% 36.75%,
+      110.07% 82.97%,
+      80.25% 74.11%,
+      0px 82.5%,
+      6px 5px
+    );
+  }
+  50% {
+    clip-path: polygon(
+      58.31% 15.56%,
+      100% 0px,
+      93.97% 36.75%,
+      110.07% 82.97%,
+      80.25% 74.11%,
+      0px 82.5%,
+      2px 5px
+    );
+  }
+  100% {
+    clip-path: polygon(
+      58.31% 15.56%,
+      100% 0px,
+      80.97% 36.75%,
+      110.07% 82.97%,
+      80.25% 74.11%,
+      0px 82.5%,
+      6px 5px
+    );
+  }
+}
+
+.Decorate1 img {
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+  transition-duration: 0.4s;
+}
+
+.Decorate2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(27, 61, 94);
+  height: 200px;
+  width: 300px;
+  clip-path: polygon(
+    100% 100px,
+    100.66% 50.5%,
+    100.66% 45.5%,
+    67% 36.75%,
+    65.66% 0%,
+    29.67% 0%,
+    100px 45.5%,
+    300px 196px
+  );
+  z-index: -1;
+}
+.Decorate2::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-16deg);
+  top: 90px;
+  right: 90px;
+  height: 10px;
+  width: 200px;
+  z-index: -2;
+}
+.Decorate2 img {
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 8px;
+  transition-duration: 0.4s;
 }
 
 .containerCarousel {
@@ -887,7 +1034,6 @@ i {
 }
 
 .flexbox .board #card-2 {
-  height: 100px;
   background: linear-gradient(
     to right,
     rgb(57, 154, 211) 35%,
@@ -895,14 +1041,11 @@ i {
   );
   background-size: 200% 100%;
   background-position: right bottom;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 70px;
+
   transition: 0.8s;
 }
 
 .flexbox .board #card-21 {
-  height: 100px;
   background: linear-gradient(
     to right,
     rgb(57, 154, 211) 45%,
@@ -911,9 +1054,7 @@ i {
   );
   background-size: 200% 100%;
   color: rgb(38, 90, 139);
-  text-align: center;
-  vertical-align: middle;
-  line-height: 70px;
+
   background-position: left bottom;
   transition-duration: 0.8s;
 }
@@ -982,6 +1123,30 @@ i {
     to right,
     rgb(57, 154, 211) 22%,
     rgb(30, 74, 99) 20%
+  );
+  background-size: 200% 100%;
+  color: rgb(38, 90, 139);
+  background-position: left bottom;
+  transition-duration: 0.8s;
+}
+
+.flexbox .board #card-0 {
+  background: linear-gradient(
+    to right,
+    rgb(57, 154, 211) 15%,
+    rgb(30, 74, 99) 15%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+
+  transition: 0.8s;
+}
+
+.flexbox .board #card-01 {
+  background: linear-gradient(
+    to right,
+    rgb(57, 154, 211) 15%,
+    rgb(30, 74, 99) 15%
   );
   background-size: 200% 100%;
   color: rgb(38, 90, 139);
@@ -1324,6 +1489,13 @@ label {
   .gitHubSpecial:hover {
     top: 17%;
     right: -195px;
+  }
+
+  .Decorate1 {
+    display: none;
+  }
+  .Decorate2 {
+    display: none;
   }
 
   .body,

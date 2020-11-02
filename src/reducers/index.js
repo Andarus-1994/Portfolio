@@ -3,6 +3,7 @@ import loggedReducer from './isLogged';
 import showBox from './showBox';
 import colors from './color';
 import users from './users';
+import decorates from './decor';
 import {combineReducers} from 'redux';
 
 const allReducers = combineReducers({
@@ -11,6 +12,7 @@ const allReducers = combineReducers({
     opener: showBox,
     colored: colors,
     user:users,
+    decor:decorates,
     
 });
 

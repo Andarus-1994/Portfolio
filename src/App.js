@@ -7,7 +7,7 @@ import './App.css';
 import SideMenu from './utilities/side-menu';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ScrollTop from './utilities/scrollTop';
-
+import Decorate from './utilities/Decorate';
 
 
 const NoMatch = () => <h1 className="noMatch">404 Not Found Wrong adress!</h1>
@@ -25,7 +25,7 @@ function App(){
     <div className="app">
     
 
-
+    <Decorate/>
     <Nav />
     <SideMenu />
     

@@ -73,6 +73,9 @@ function BoardDisplay(){
     <Card id={opener ? 'card-7' : 'card-71'} className="card" draggable="true" bounds="parent">
           <p>Vue</p>
    </Card>
+   <Card id={opener ? 'card-0' : 'card-01'} className="card" draggable="true" bounds="parent">
+          <p>Spring</p>
+   </Card>
     </Board>
 
     <Board id="board-3" className="board" title="Plans to learn" left="-5%">

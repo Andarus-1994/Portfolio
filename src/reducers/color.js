@@ -1,4 +1,12 @@
-const changeColor = (state='rgb(80, 147, 185)', action) =>{
+var initialState
+if(localStorage.getItem('color')){
+initialState=localStorage.getItem('color')
+}
+else{
+ initialState ='rgb(80, 147, 185)';
+}
+
+const changeColor = (state = initialState, action) =>{
 
     switch(action.type){
         case 'CHANGE_COLOR_DARK':

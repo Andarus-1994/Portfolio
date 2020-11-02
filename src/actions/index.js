@@ -24,6 +24,12 @@ export const color_light = () =>{
     }
 }
 
+export const decorate = () =>{
+  return{
+      type:'DECORATE_ON_OFF'
+  }
+}
+
 export const fetchUsers = () => {
     return (dispatch) => {
       dispatch(fetchUsersRequest())

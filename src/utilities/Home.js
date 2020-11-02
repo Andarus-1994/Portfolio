@@ -8,6 +8,7 @@ import Loader from './Loader';
 import DarkMode from './DarkMode';
 import Fade from 'react-reveal/Fade';
 
+
 function Home(){
   
 
@@ -58,7 +59,10 @@ function Home(){
    
     <div className="Home">
     <DarkMode />
+   
+    
     <Fade>
+    
     <div className="homeCover">
     <center><h1 className="titleHome"><span className="homie">Welcome</span>, to my Portfolio Website</h1></center>
     <br />

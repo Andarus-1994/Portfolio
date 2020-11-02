@@ -45,7 +45,7 @@ const fetchItems =  async() => {
   
 
     <div className="About">
-     
+ 
     <DarkMode />
     <Fade>
 <h2>About</h2>

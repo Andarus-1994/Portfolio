@@ -15,18 +15,21 @@ function DarkMode(){
     localStorage.setItem('color',colored)
 },[colored]);
 
-/* colored.state=localStorage.getItem('color'); */
+
 
 
     document.body.style.backgroundColor = colored;
     var css = document.createElement("style");
-      css.type = "text/css";
+    console.log(colored);
       css.innerHTML = `.side-menu li { 
           border-top-color:${colored};
           border-bottom-color:${colored};
      }
      .About .btnDisplay{
       background-color: ${colored};
+     }
+     .Decorate2::after {
+      background-color:${colored};
      }
      
      `;
@@ -47,6 +50,7 @@ function DarkMode(){
         .infoAbout .containerAbout .download{ 
           background-color: rgb(13, 84, 141);
       }
+      
         `;
       
       
